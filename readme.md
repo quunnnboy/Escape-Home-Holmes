@@ -8,7 +8,7 @@ Ik heb een escape room gemaakt met als thema het huis van Sherlock Holmes. Je mo
 
 Voor het switchen van kamers heb ik gewerkt met classes voor de achtergrondfoto's en met InnerHTML voor de content van de page.
 
-Ik heb et internet gebruikt voor volgende zaken:
+Ik heb het internet gebruikt voor volgende zaken:
 1. Voor de switches te maken. Ik heb hiervoor volgende website gebruikt: https://www.w3schools.com/howto/howto_css_switch.asp
 
 2. Hier heb ik AI gebruikt voor het debuggen want de loop wou niet stoppen. Ik heb de code gestuurd en gevraagd wat er mis was, ook heb ik de errorcode erbij gestuurd. Ik was dus vergeten voor de clearinterval op te roepen wanneer de if state voldaan is.
