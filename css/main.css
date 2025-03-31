@@ -1,0 +1,689 @@
+body{
+    background-image: url('../images/backgrounds/start-screen.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: 50%;
+    background-color: hsl(0, 0%, 0%);
+}
+
+.room1left{
+    background-image: url('../images/backgrounds/room-1-left.png');
+}
+
+.room1right{
+    background-image: url('../images/backgrounds/room-1-right.png');
+}
+
+.room2desk{
+    background-image: url('../images/backgrounds/room-2-desk.png');
+}
+
+.roomexitclosed{
+    background-image: url('../images/backgrounds/exit-door-closed.png');
+}
+
+.roomexitopen{
+    background-image: url('../images/backgrounds/exit-door-open.png');
+    cursor: pointer;
+}
+
+.exit-screen{
+    background-image: none;
+    background-color: hsl(0, 0%, 0%);
+}
+
+p{
+    font-family: "Jockey One";
+    color: hsl(0, 0%, 100%);
+    font-size: 1.25rem;
+}
+
+.intro-screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5.938rem;
+}
+
+.intro-titel{
+    font-family: "Jim Nightshade";
+    font-size: 9.375rem;
+    font-weight: 400;
+    -webkit-text-stroke: 1px hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    text-shadow: 0px 11px 8.6px hsl(0, 0%, 0%);;
+}
+
+.explain-text{
+  padding: 1.875rem;
+  background-color: hsl(0, 0%, 0%, 20%);
+  border-radius: 1.25rem;
+}
+
+.big-button{
+    background-color: hsl(0, 40%, 58%, 60%);
+    font-size: 5rem;
+    border-radius: 6.25rem;
+    padding: 0 3.125rem;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    font-family: "Jomhuria";
+    cursor: pointer;
+}
+
+@media (max-height: 500px){    
+    .big-button{
+        font-size: 2rem;
+    }
+
+    .explain-text{
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .intro-titel{
+        font-size: 4rem;
+    }
+
+    .intro-screen{
+        gap: 1rem;
+        margin-top: 14vh;
+    }
+}
+
+@media (max-width: 500px){    
+    .big-button{
+        font-size: 2rem;
+    }
+
+    .explain-text{
+        padding: 0.2rem;
+        font-size: 0.8rem;
+    }
+
+    .intro-titel{
+        font-size: 2.8rem;
+    }
+
+    .intro-screen{
+        gap: 1rem;
+        margin-top: 34vh;
+    }
+}
+
+.outro-screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.125rem;
+    padding-top: 5rem;
+}
+
+.outro-titel{
+    font-family: "Jim Nightshade";
+    font-size: 7rem;
+    font-weight: 400;
+    -webkit-text-stroke: 1px hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    text-shadow: 0px 11px 8.6px hsl(0, 0%, 0%);;
+}
+
+.explain-text{
+  padding: 1.875rem;
+  background-color: hsl(0, 0%, 0%, 20%);
+  border-radius: 1.25rem;
+}
+
+.container{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.note{
+    position: absolute;
+    right: 15%;
+    bottom: 3%;
+}
+
+@media (max-width: 500px) {
+    .note{
+        scale: 0.4;
+        right: 5%;
+        bottom: 32%;
+    } 
+}  
+
+@media (max-height: 500px) {
+    .note{
+        scale: 0.6;
+        right: 15%;
+        bottom: 0%;
+    } 
+}  
+
+.note:hover {
+    filter: brightness(1.075);
+    cursor: pointer;
+}
+
+.laptop{
+    height: 11.94rem;
+    width: 16rem;
+    position: absolute;
+    right: 35%;
+    bottom: 33%;
+}
+
+@media (max-width: 500px) {
+    .laptop{
+        scale: 0.3;
+        right: 10%;
+        bottom: 39%;
+    }
+}
+
+@media (max-height: 500px) {
+    .laptop{
+        scale: 0.5;
+        right: 30%;
+        bottom: 22%;
+    }
+}
+
+.laptop:hover {
+    filter: brightness(1.075);
+    cursor: pointer;
+}
+
+.arrow-down{
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    width: 3.125rem;
+    height: 4.375rem;
+}
+
+.arrow-down:hover {
+    cursor: pointer;
+}
+
+.arrow-left{
+    position: absolute;
+    left: 1%;
+    bottom: 50%;
+    width: 4.375rem;
+    height: 3.125rem;
+}
+
+.arrow-left:hover {
+    cursor: pointer;
+}
+
+.arrow-right{
+    position: absolute;
+    right: 1%;
+    bottom: 50%;
+    width: 4.375rem;
+    height: 3.125rem;   
+}
+
+.arrow-right:hover {
+    cursor: pointer;
+}
+
+.arrow-close{
+    position: absolute;
+    width: 4.375rem;
+    height: 3.125rem;
+    right: -10%;
+    top: -10%;
+}
+
+.arrow-close-r2{
+    position: absolute;
+    width: 4.375rem;
+    height: 3.125rem;
+    right: 11%;
+    top: 15%;
+}
+
+.arrow-close:hover{
+    cursor: pointer;
+}
+
+.arrow-close-r2:hover{
+    cursor: pointer;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+  
+    background: hsla(0, 0%, 0%, 0.5);
+    backdrop-filter: blur(10px);
+    opacity: 0; 
+  
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .modal {
+    padding: 2rem;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-width: 25rem;
+    width: 90%;
+    text-align: center;
+    transform: translateY(-2rem);
+    transition: transform 0.3s ease;
+  }
+  
+  .modal-backdrop.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .modal-backdrop.active .modal {
+    transform: translateY(0);
+}
+  
+/* Laptop modal screen desk room */
+  
+.modal-laptop {
+    padding: 2rem;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-width: 90%;
+    width: 90%;
+    max-height: 90%;
+    height: 90%;
+    text-align: center;
+    transform: translateY(-2rem);
+    transition: transform 0.3s ease;
+
+    padding: 0;
+    margin: 0;
+  }
+  
+  .modal-backdrop.active .modal-laptop {
+    transform: translateY(0);
+}
+
+.computer-border{
+    width: 90%;
+    height: 90%;
+    background-color: hsl(211, 88%, 22%);
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.computer-screen{
+    width: 95%;
+    height: 88%;
+    background-color: hsl(0, 0%, 0%);
+    border-radius: 1.25rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-button{
+    display: flex;
+    gap: 1.875rem;
+}
+
+.input-field{
+    background-color: hsl(0, 0%, 0%);
+    font-family: "Jersey 25", sans-serif;
+    font-size: 2rem;
+    color: hsl(114, 100%, 50%);
+    border: hsl(114, 100%, 50%) solid 2px;
+    border-radius: 2px;
+    box-shadow: 0 0 40px hsl(114, 100%, 50%), inset 0 0 20px hsl(114, 100%, 50%);
+    text-align: center;
+}
+
+
+.button-password{
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(114, 100%, 50%);
+    border: hsl(114, 100%, 50%) solid 2px;
+    border-radius: 5px;
+    font-family: "Jersey 25", sans-serif;
+    padding: 5px;
+    box-shadow: 0 0 20px hsl(114, 100%, 50%), inset 0 0 10px hsl(114, 100%, 50%);
+}
+
+.button-password:hover{
+    background-color: hsl(116, 24%, 22%);
+    cursor: pointer;
+}
+
+.title-computer{
+    font-family: "Jersey 25", sans-serif;
+    font-size: 7rem;
+    color: hsl(114, 100%, 50%);
+    text-shadow: 0 0 70px hsl(114, 100%, 50%);
+}
+
+.error{
+    color: hsl(0, 100%, 50%);
+    border: hsl(0, 100%, 50%);
+}
+
+@media (max-width: 500px) {
+    .modal{
+        width: 70%;
+    }
+
+    .input-field{
+        font-size: 1rem;
+    }
+    
+    
+    .button-password{
+        padding: 5px;
+        box-shadow: 0 0 20px hsl(114, 100%, 50%), inset 0 0 10px hsl(114, 100%, 50%);
+    }
+    
+    .title-computer{
+        font-size: 3rem;
+        text-shadow: 0 0 20px hsl(114, 100%, 50%);
+    }
+
+    .computer-border{
+        height: 30%;
+    }
+}
+
+@media (max-height: 500px) {
+    .modal{
+        width: 30%;
+    }
+
+    .title-computer{
+        font-size: 5rem;
+    }
+}
+
+/* Keypad and switches exit room */
+  
+.modal-keypad{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .modal-backdrop.active .modal-keypad {
+    transform: translateY(0);
+}
+
+.keypad-border{
+    background-color: hsl(0, 0%, 57%);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.red-light{
+    width: 1.563rem;
+    height: 1.563rem;
+    background-color: hsl(0, 91%, 26%);
+    border-radius: 6.25rem;
+}
+
+.red-light.active{
+    background-color: hsl(0, 100%, 50%);
+}
+
+.green-light{
+    width: 1.563rem;
+    height: 1.563rem;
+    background-color: hsl(120, 100%, 25%);
+    border-radius: 6.25rem;
+}
+
+.green-light.active{
+    background-color:hsl(114, 100%, 50%);
+}
+
+.bkey{
+    border-radius: 6.25rem;
+    width: 3.125rem;
+    height: 3.125rem;
+    font-size: 2rem;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 32%);
+}
+
+.keyrow{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.keypad-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}
+
+.button-enter{
+    border-radius: 6.25rem;
+    width: 7.25rem;
+    height: 3.125rem;
+    font-size: 2rem;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 32%);
+}
+
+.keypad-screen{
+    padding-left: 1.563rem;
+    padding-right: 1.563rem;
+    font-size: 2rem;
+    background-color: hsl(86, 20%, 58%);
+    width: 100%;
+    min-height: 3rem;
+}
+
+.keypad-light{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 3.75rem;
+    height: 2.125rem;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(0, 0%, 43%);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.625rem;
+    width: 1.625rem;
+    left: 4px;
+    bottom: 4px;
+    background-color: hsl(0, 0%, 100%);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: hsl(207, 90%, 54%);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px hsl(207, 90%, 54%);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.switch-border{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: hsl(0, 0%, 86%);
+    padding: 1rem 1rem;
+    border-radius: 0.625rem;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.keypad-image{
+    display: flex;
+    position: fixed;
+    scale: 0.25;
+    right: 12%;
+    bottom: 5%;
+}
+
+.keypad-image{
+    cursor: pointer;
+}
+
+.arrow-close-rex{
+    position: absolute;
+    width: 4.375rem;
+    height: 3.125rem;
+    right: -50%;
+    top: 0%;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    .outro-titel{
+        font-size: 3rem;
+    }
+    
+    .outro-screen{
+        padding-top: 20rem;
+        gap: 2rem;
+    }
+
+    .keypad-image{
+        scale: 0.1;
+        right: -20%;
+        bottom: 20%;
+    }
+
+    .arrow-close-rex{
+        top: -20%;
+        right: -10%;
+    }  
+}
+
+@media (max-height: 500px) {
+    .outro-titel{
+        font-size: 4rem;
+    }
+
+    .outro-screen{
+        padding-top: 2rem;
+    }
+
+    .keypad-image{
+        scale: 0.2;
+        right: 0%;
+        bottom: -20%;
+    } 
+
+    .bkey{
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+    
+    .button-enter{
+        width: 5rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+    
+    .keypad-screen{
+        font-size: 1rem;
+        min-height: 2rem;
+    }
+
+    .keypad-border{
+        padding: 1rem;
+        gap: 0.5rem;
+    }
+    
+    .red-light{
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+    
+    .green-light{
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    .switch-border{
+        gap: 0.5rem;
+        padding: 0.5rem 0.5rem;
+    }  
+}
